@@ -1,8 +1,8 @@
+import { useCatStore } from "@stores/catStore";
 import { act } from "@testing-library/react-hooks";
-import { useCatStore } from "../../stores/catStore";
 
 // Mock the API services
-jest.mock("../../services/catApi", () => ({
+jest.mock("@services/catApi", () => ({
   fetchMyImages: jest.fn(),
   fetchVotes: jest.fn(),
   fetchFavourites: jest.fn(),
@@ -20,7 +20,7 @@ import {
   fetchFavourites,
   fetchMyImages,
   fetchVotes,
-} from "../../services/catApi";
+} from "@services/catApi";
 
 const mockImage = { id: "img1", url: "https://example.com/cat1.jpg" };
 const mockVoteUp = {

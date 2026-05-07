@@ -1,5 +1,5 @@
-import AppHeader from "@/components/layouts/AppHeader";
-import CatGrid from "@/components/layouts/CatGrid";
+import AppHeader from "@components/layouts/AppHeader";
+import CatGrid from "@components/layouts/CatGrid";
 import { Colors } from "@constants/colors";
 import { Shadows } from "@constants/theme";
 import { Ionicons } from "@expo/vector-icons";

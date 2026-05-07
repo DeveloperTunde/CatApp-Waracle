@@ -1,4 +1,4 @@
-import ErrorBanner from "@/components/shared/ErrorBanner";
+import ErrorBanner from "@components/shared/ErrorBanner";
 import { Colors } from "@constants/colors";
 import { useCatStore } from "@stores/catStore";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

@@ -1,10 +1,10 @@
+import { Colors } from "@constants/colors";
+import { Spacing } from "@constants/theme";
 import { Ionicons } from "@expo/vector-icons";
+import AppButton from "@ui/AppButton";
+import AppText from "@ui/AppText";
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Colors } from "../../constants/colors";
-import { Spacing } from "../../constants/theme";
-import AppButton from "../ui/AppButton";
-import AppText from "../ui/AppText";
 
 interface EmptyStateProps {
   iconName?: keyof typeof Ionicons.glyphMap;

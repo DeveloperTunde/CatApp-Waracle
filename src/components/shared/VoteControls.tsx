@@ -1,9 +1,9 @@
+import { Colors } from "@constants/colors";
+import { Spacing } from "@constants/theme";
+import IconButton from "@ui/IconButton";
+import ScoreBadge from "@ui/ScoreBadge";
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Colors } from "../../constants/colors";
-import { Spacing } from "../../constants/theme";
-import IconButton from "../ui/IconButton";
-import ScoreBadge from "../ui/ScoreBadge";
 
 interface VoteControlsProps {
   score: number;

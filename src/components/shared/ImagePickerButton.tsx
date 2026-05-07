@@ -1,9 +1,9 @@
+import { Colors } from "@constants/colors";
+import { BorderRadius, Shadows, Spacing } from "@constants/theme";
 import { Ionicons } from "@expo/vector-icons";
+import AppText from "@ui/AppText";
 import React from "react";
 import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
-import { Colors } from "../../constants/colors";
-import { BorderRadius, Shadows, Spacing } from "../../constants/theme";
-import AppText from "../ui/AppText";
 
 interface ImagePickerButtonProps {
   uri?: string | null;

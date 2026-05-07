@@ -1,9 +1,9 @@
+import { Colors } from "@constants/colors";
+import { BorderRadius, Spacing } from "@constants/theme";
 import { Ionicons } from "@expo/vector-icons";
+import AppText from "@ui/AppText";
 import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { Colors } from "../../constants/colors";
-import { BorderRadius, Spacing } from "../../constants/theme";
-import AppText from "../ui/AppText";
 
 interface ErrorBannerProps {
   message: string;

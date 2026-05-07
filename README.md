@@ -28,33 +28,46 @@ components/
 
 ```
 CatApp-Waracle/
-├── app/                    # Expo Router screens
-│   ├── _layout.tsx         # Root layout (providers, global error)
-│   ├── index.tsx           # "/" — Cat gallery
-│   └── upload.tsx          # "/upload" — Upload screen
-├── components/
-│   ├── ui/              # Base UI primitives
-│   ├── shared/          # Composed UI units
-│   └── layouts/          # Feature-level components
-├── constants/
-│   ├── colors.ts           # 🎨 Global color palette (primary: #f93b02)
-│   ├── theme.ts            # Typography, spacing, shadows
-│   └── api.ts              # Base URL, API key, page size
-├── hooks/
-│   ├── useImagePicker.ts   # Image library access
-│   └── useDebounce.ts      # Debounce utility
-├── services/
-│   └── catApi.ts           # All API calls (typed)
-├── stores/
-│   ├── catStore.ts         # Images, votes, favourites + pagination
-│   └── uploadStore.ts      # Upload flow state
-├── types/
-│   └── index.ts            # Shared TypeScript types
-└── __tests__/
-    ├── components/         # Atom/molecule unit tests
-    ├── hooks/              # Hook tests
-    ├── services/           # API service tests
-    └── stores/             # Zustand store tests
+├── app/                          # Expo Router screens (must stay at root)
+│   ├── _layout.tsx               # Root layout — QueryClient, SafeArea, error banner
+│   ├── index.tsx                 # "/" — Cat gallery with FAB
+│   └── upload.tsx                # "/upload" — Image upload screen
+│
+├── src/                          # All application source code
+│   ├── components/
+│   │   ├── ui/                   # Atoms — base design system primitives
+│   │   ├── shared/               # Molecules — reusable composed components
+│   │   └── layouts/              # Organisms — feature-level components
+│   ├── constants/
+│   │   ├── colors.ts             # Global colour palette (primary: #f93b02)
+│   │   ├── theme.ts              # Typography, spacing, border radius, shadows
+│   │   └── api.ts                # Endpoints and page size
+│   ├── hooks/
+│   │   ├── useCatQueries.ts      # All TanStack Query hooks + mutations
+│   │   ├── useImagePicker.ts     # Expo image picker with permission handling
+│   │   └── useDebounce.ts        # Generic debounce hook
+│   ├── services/
+│   │   └── catApi.ts             # Axios client + all typed API functions
+│   ├── stores/
+│   │   ├── catStore.ts           # Zustand store — images, votes, favourites
+│   │   └── uploadStore.ts        # Zustand store — upload flow state
+│   ├── types/
+│   │   └── index.ts              # Shared TypeScript interfaces
+│   └── utils/                    # Helper/utility functions
+│
+├── assets/                       # App icon, splash, logo
+│
+├── __tests__/
+│   ├── components/               # UI component tests
+│   ├── hooks/                    # Hook unit tests
+│   ├── services/                 # API service tests
+│   └── stores/                   # Zustand store tests
+│
+├── .env.local                    # Local environment variables (git-ignored)
+├── app.json                      # Expo config
+├── babel.config.js               # Path aliases + Reanimated plugin
+├── tsconfig.json                 # Strict TypeScript + path aliases
+└── package.json
 ```
 
 ## Getting Started

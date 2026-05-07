@@ -1,9 +1,9 @@
-import AppHeader from "@/components/layouts/AppHeader";
-import ErrorBanner from "@/components/shared/ErrorBanner";
-import ImagePickerButton from "@/components/shared/ImagePickerButton";
-import AppButton from "@/components/ui/AppButton";
-import AppText from "@/components/ui/AppText";
-import IconButton from "@/components/ui/IconButton";
+import AppHeader from "@components/layouts/AppHeader";
+import ErrorBanner from "@components/shared/ErrorBanner";
+import ImagePickerButton from "@components/shared/ImagePickerButton";
+import AppButton from "@components/ui/AppButton";
+import AppText from "@components/ui/AppText";
+import IconButton from "@components/ui/IconButton";
 import { Colors } from "@constants/colors";
 import { BorderRadius, Spacing } from "@constants/theme";
 import { useUploadMutation } from "@hooks/useCatQueries";

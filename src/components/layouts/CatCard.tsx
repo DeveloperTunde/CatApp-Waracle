@@ -1,6 +1,5 @@
-import VoteControls from "@/components/shared/VoteControls";
-import IconButton from "@/components/ui/IconButton";
-import { CARD_MARGIN, CARD_WIDTH, IMAGE_HEIGHT } from "@/utils/index";
+import VoteControls from "@components/shared/VoteControls";
+import IconButton from "@components/ui/IconButton";
 import { Colors } from "@constants/colors";
 import { BorderRadius, Shadows, Spacing } from "@constants/theme";
 import {
@@ -11,6 +10,7 @@ import {
   useFavouritesQuery,
   useVotesQuery,
 } from "@hooks/useCatQueries";
+import { CARD_MARGIN, CARD_WIDTH, IMAGE_HEIGHT } from "@utils/index";
 import React, { useCallback } from "react";
 import { Image, StyleSheet, View } from "react-native";
 import { CatImage } from "../../types";

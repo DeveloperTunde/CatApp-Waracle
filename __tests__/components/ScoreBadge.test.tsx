@@ -1,6 +1,6 @@
+import ScoreBadge from "@components/ui/ScoreBadge";
 import { render } from "@testing-library/react-native";
 import React from "react";
-import ScoreBadge from "../../components/ui/ScoreBadge";
 
 describe("ScoreBadge", () => {
   it("renders positive score with + prefix", () => {

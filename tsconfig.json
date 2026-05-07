@@ -3,43 +3,19 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": "./",
-    "types": [
-      "jest"
-    ],
+    "types": ["jest"],
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@components/*": [
-        "./components/*"
-      ],
-      "@ui/*": [
-        "components/ui/*"
-      ],
-      "@shared/*": [
-        "components/shared/*"
-      ],
-      "@layouts/*": [
-        "components/layouts/*"
-      ],
-      "@hooks/*": [
-        "./hooks/*"
-      ],
-      "@stores/*": [
-        "./stores/*"
-      ],
-      "@services/*": [
-        "./services/*"
-      ],
-      "@constants/*": [
-        "./constants/*"
-      ],
-      "@types/*": [
-        "./types/*"
-      ],
-      "@utils/*": [
-        "./utils/*"
-      ]
+      "@/*": ["./*"],
+      "@components/*": ["./src/components/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@shared/*": ["./src/components/shared/*"],
+      "@layouts/*": ["./src/components/layouts/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@services/*": ["./src/services/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@types/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": [

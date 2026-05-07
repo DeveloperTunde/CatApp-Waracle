@@ -1,9 +1,9 @@
+import { Colors } from "@constants/colors";
+import { Shadows, Spacing } from "@constants/theme";
+import AppText from "@ui/AppText";
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Colors } from "../../constants/colors";
-import { Shadows, Spacing } from "../../constants/theme";
-import AppText from "../ui/AppText";
 
 interface AppHeaderProps {
   title?: string;
@@ -28,7 +28,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
         <View style={styles.center}>
           {showLogo ? (
             <Image
-              source={require("../../assets/images/logo.png")}
+              source={require("../../../assets/images/logo.png")}
               style={styles.logo}
               resizeMode="contain"
             />

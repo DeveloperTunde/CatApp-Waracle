@@ -7,9 +7,9 @@ import {
   fetchMyImages,
   fetchVotes,
   uploadCatImage,
-} from "../../services/catApi";
+} from "@services/catApi";
 
-jest.mock("../../services/catApi", () => ({
+jest.mock("@services/catApi", () => ({
   fetchMyImages: jest.fn(),
   uploadCatImage: jest.fn(),
   fetchVotes: jest.fn(),

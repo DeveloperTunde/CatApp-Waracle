@@ -1,6 +1,6 @@
+import AppText from "@components/ui/AppText";
 import { render } from "@testing-library/react-native";
 import React from "react";
-import AppText from "../../components/ui/AppText";
 
 describe("AppText", () => {
   it("renders children", () => {
