@@ -71,6 +71,7 @@ export async function uploadCatImage(uri: string): Promise<UploadResponse> {
     {
       headers: {
         "x-api-key": API_KEY,
+        "Content-Type": "multipart/form-data",
       },
       transformRequest: (data) => data,
     },
