@@ -29,15 +29,15 @@ components/
 ```
 CatApp-Waracle/
 ├── app/                          # Expo Router screens (must stay at root)
-│   ├── _layout.tsx               # Root layout-QueryClient, SafeArea, error banner
-│   ├── index.tsx                 # "/"-Cat gallery with FAB
-│   └── upload.tsx                # "/upload"-Image upload screen
+│   ├── _layout.tsx               # Root layout - QueryClient, SafeArea, error banner
+│   ├── index.tsx                 # "/" - Cat gallery with FAB
+│   └── upload.tsx                # "/upload" - Image upload screen
 │
 ├── src/                          # All application source code
 │   ├── components/
-│   │   ├── ui/                   # Atoms-base design system primitives
-│   │   ├── shared/               # Molecules-reusable composed components
-│   │   └── layouts/              # Organisms-feature-level components
+│   │   ├── ui/                   # UI - base design system primitives
+│   │   ├── shared/               # Shared - reusable composed components
+│   │   └── layouts/              # Layouts - feature-level components
 │   ├── constants/
 │   │   ├── colors.ts             # Global colour palette (primary: #f93b02)
 │   │   ├── theme.ts              # Typography, spacing, border radius, shadows
@@ -49,8 +49,8 @@ CatApp-Waracle/
 │   ├── services/
 │   │   └── catApi.ts             # Axios client + all typed API functions
 │   ├── stores/
-│   │   ├── catStore.ts           # Zustand store-images, votes, favourites
-│   │   └── uploadStore.ts        # Zustand store-upload flow state
+│   │   ├── catStore.ts           # Zustand store - images, votes, favourites
+│   │   └── uploadStore.ts        # Zustand store - upload flow state
 │   ├── types/
 │   │   └── index.ts              # Shared TypeScript interfaces
 │   └── utils/                    # Helper/utility functions
@@ -111,7 +111,7 @@ npm run typecheck
 
 ## Features Implemented
 
-### ✅ Requirement 1-Upload (`/upload`)
+### ✅ Requirement 1 - Upload (`/upload`)
 
 - Image picker with permission handling
 - Validates file type (jpg, png, gif, webp)
@@ -119,7 +119,7 @@ npm run typecheck
 - Displays API + validation errors inline
 - Redirects to `/` on success
 
-### ✅ Requirement 2-Cat Gallery (`/`)
+### ✅ Requirement 2 - Cat Gallery (`/`)
 
 - Responsive grid: up to 4 columns based on screen width
 - Scales to 340px viewport
@@ -127,21 +127,21 @@ npm run typecheck
 - Infinite scroll pagination (page-based, 12 per page)
 - Pull-to-refresh
 
-### ✅ Requirement 3-Favouriting
+### ✅ Requirement 3 - Favouriting
 
 - Heart button overlay on each cat image
 - Filled ❤️ = favourited, outline 🤍 = not favourited
 - Optimistic updates with rollback on error
 - Calls `POST /favourites` / `DELETE /favourites/:id`
 
-### ✅ Requirement 4-Voting
+### ✅ Requirement 4 - Voting
 
 - Up/down arrow buttons below each image
 - Toggles vote off if same direction clicked again
 - Switches vote if opposite direction clicked
 - Optimistic updates with rollback
 
-### ✅ Requirement 5-Scoring
+### ✅ Requirement 5 - Scoring
 
 - Score = upvotes − downvotes
 - Colour-coded badge: green (positive), red (negative), grey (zero)
