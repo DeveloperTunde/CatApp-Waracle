@@ -43,14 +43,11 @@ export default function RootLayout() {
             screenOptions={{
               headerShown: false,
               contentStyle: { backgroundColor: Colors.background },
-              animation: "slide_from_right",
+              animation: "none",
             }}
           >
             <Stack.Screen name="index" />
-            <Stack.Screen
-              name="upload"
-              options={{ animation: "slide_from_bottom" }}
-            />
+            <Stack.Screen name="upload" options={{ animation: "none" }} />
           </Stack>
         </SafeAreaProvider>
       </GestureHandlerRootView>
