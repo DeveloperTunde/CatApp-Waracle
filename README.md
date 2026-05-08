@@ -84,12 +84,18 @@ CatApp-Waracle/
 # 1. Install dependencies
 npm install
 
-# 2. Add the Cat API logo
-# Download https://thatapicompany.com/wp-content/uploads/2025/05/theCatAPI-A-1.png
-# Save as: assets/logo.png
+# You can also run this instead for dependency compactibility
+npm install --legacy-peer-deps
 
-# 3. Start the development server
+# 2. Start the development server
 npx expo start
+
+# 3. Adding this for Testing Purposes and since this is not a production App
+- create a .env.local file in the root of the project and the following
+
+EXPO_PUBLIC_CAT_API_KEY=live_N5JEAmGHbOWfHLgcag5X9SM4gbr6DZ6xD4tKoA1g7GMAwDZAYCbghbUMhODPtazh
+EXPO_PUBLIC_CAT_API_BASE_URL=https://api.thecatapi.com/v1
+
 
 # 4. Open on device
 # Press 'i' for iOS simulator, 'a' for Android emulator
